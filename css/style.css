@@ -1,3 +1,71 @@
 /*En esta pagina se compila los esilos css completos, donde cada variable tiene su estilo para mejorar el tiempo mantenimiento*/
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0; }
+
+/*::::::::::::::::::://Efecto Parallax//:::::::::::::::::::*/
+.block {
+  margin-top: 40%;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  font-size: 16px; }
+
+.block h2 {
+  position: relative;
+  display: block;
+  text-align: center;
+  margin: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 10vw;
+  color: white;
+  font-weight: 400; }
+
+.img-parallax {
+  width: 100vmax;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  pointer-events: none; }
+
+/*::::::::::::::::::::::::// FIn Parallax//::::::::::::::::::::::::::*/
+/*::::::::::::::::::::::::// Efectos SLIDER//::::::::::::::::::::::::::*/
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0; }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left; }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0; }
+
+/*::::::::::::::::::::::::// Fin Efectos SLIDER//::::::::::::::::::::::::::*/
+body {
+  background: black; }
 
 /*# sourceMappingURL=style.css.map */
