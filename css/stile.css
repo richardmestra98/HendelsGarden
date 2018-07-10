@@ -1,23 +1,90 @@
-/*
-Errno::ENOENT: No such file or directory @ rb_sysopen - css/estilos
+/*En esta pagina se compila los esilos css completos, donde cada variable tiene su estilo para mejorar el tiempo mantenimiento*/
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0; }
 
-Backtrace:
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:454:in `read'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:454:in `update_stylesheet'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:294:in `watch'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/plugin.rb:109:in `method_missing'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/exec/sass_scss.rb:51:in `process_result'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/exec/base.rb:52:in `parse'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/exec/base.rb:19:in `parse!'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/bin/sass:13:in `<top (required)>'
-C:/Ruby25-x64/bin/sass:23:in `load'
-C:/Ruby25-x64/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - css/estilos"; }
+/*::::::::::::::::::://Nav Logo//:::::::::::::::::::*/
+.logo {
+  padding: 10px 10px 5px 0;
+  z-index: 3;
+  bottom: 43.4vw;
+  display: block;
+  position: relative;
+  background: linear-gradient(to bottom, #008080, rgba(255, 255, 255, 0)); }
+  .logo img {
+    width: 30%; }
+
+#Oficial {
+  z-index: 6;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.774);
+  color: white;
+  font-size: 2.5vh;
+  width: 100%;
+  text-align: center;
+  padding: 1vh; }
+
+/*::::::::::::::::::://Efecto Parallax//:::::::::::::::::::*/
+.block {
+  margin-top: 40%;
+  width: 100%;
+  height: 180px;
+  position: relative;
+  overflow: hidden;
+  font-size: 16px;
+  box-shadow: 2px 0px 15px 1px grey; }
+
+.block h2 {
+  position: relative;
+  display: block;
+  text-align: center;
+  margin: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 10vw;
+  color: white;
+  font-weight: 400; }
+
+.img-parallax {
+  width: 100vmax;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  pointer-events: none; }
+
+/*::::::::::::::::::::::::// FIn Parallax//::::::::::::::::::::::::::*/
+/*::::::::::::::::::::::::// Efectos SLIDER//::::::::::::::::::::::::::*/
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0; }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left; }
+
+.rslides img {
+  display: block;
+  float: left;
+  width: 100%;
+  border: 0; }
+
+/*::::::::::::::::::::::::// Fin Efectos SLIDER//::::::::::::::::::::::::::*/
+
+/*# sourceMappingURL=stile.css.map */
