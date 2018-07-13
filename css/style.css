@@ -32,9 +32,8 @@
 */
 /*::::::::::::::::::://Efecto Parallax//:::::::::::::::::::*/
 .block {
-  margin-top: 20%;
   width: 100%;
-  height: 200px;
+  height: 280pt;
   position: relative;
   overflow: hidden;
   font-size: 16px;
@@ -85,28 +84,60 @@
   position: fixed;
   background: rgba(0, 0, 0, 0.5);
   width: 100%; }
-  .listas ul {
-    width: 100%;
-    color: white; }
-    .listas ul li {
-      margin: 0;
-      display: inline-block;
-      padding: .8% .8vh 1.1% .8vh; }
+  .listas img {
+    width: 57%;
+    padding: 5.5% 0 0% 0; }
 
-.listas li a img {
-  margin: 0px 0 -12px 0;
-  width: 8vw; }
-  .listas li a img:hover {
-    color: blue; }
+#izq ul {
+  margin-right: -2vw;
+  display: inline-flex; }
+  #izq ul li {
+    padding: 13pt 10pt 5pt; }
+
+#der ul {
+  margin-left: -2vw;
+  display: inline-flex; }
+  #der ul li {
+    padding: 13pt 10pt 5pt; }
+
+a[id="contac"] {
+  border-radius: 6px;
+  padding: 1pt 6pt 4pt 6pt;
+  border: 1px solid white; }
+  a[id="contac"]:hover {
+    background: rgba(255, 255, 255, 0.39); }
 
 a[id="item"]:hover {
-  padding-top: 8px;
-  top: 3px;
+  padding-bottom: 4pt;
   border-bottom: 2px solid white; }
 
 li a {
   font-weight: 100;
   font-size: 1.6rem;
   color: white; }
+
+/*::::::::::::::::::::::::// CONTENEDOR//::::::::::::::::::::::::::*/
+.contenedor {
+  margin: 0 5% 0 5%; }
+
+/*::::::::::::::::::::::::// ESTILOS DE CardText//::::::::::::::::::::::::::*/
+.cardText {
+  padding: 5% 1% 10% 1%;
+  text-align: center; }
+  .cardText h5 {
+    font-size: 2.5rem; }
+  .cardText p {
+    font-weight: 200;
+    padding: 2%;
+    text-align: center;
+    font-size: 1.2rem; }
+
+img[id="CardImg"] {
+  height: 50%;
+  width: 50%; }
+
+.btn {
+  margin: 10pt 0 0 0;
+  width: 50%; }
 
 /*# sourceMappingURL=style.css.map */

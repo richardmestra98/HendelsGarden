@@ -97,3 +97,13 @@ $(".rslides").responsiveSlides({
 
 
 /*:::::::::::::::::::::// Fin Efecto Slider //:::::::::::::::::::::::::::::*/
+/*:::::::::::::::::::::// Efecto Activar scroll //:::::::::::::::::::::::::::::*/
+$(function(){
+  $(window).scroll(function(){
+    if($(this).scrollTop()>=0){
+        alert('header just passed.');
+        // instead of alert you can use to show your ad
+        // something like $('#footAd').slideup();
+    }
+  });
+});
